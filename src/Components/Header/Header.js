@@ -10,8 +10,8 @@ const Header = () => {
 					Zero Capital Trading
 				</NavLink>
 				<div className={classes.RightGroup}>
-					<NavLink className={classes.NavLink} to="/">
-						Home
+					<NavLink className={classes.NavLink} to="/about">
+						About
 					</NavLink>
 					<NavLink className={classes.NavLink} to="/faq">
 						FAQ

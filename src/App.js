@@ -9,7 +9,7 @@ function App() {
 			<Header />
 			<Switch>
 				<Route exact to="/" component={Home} />
-				<Route to="/faq"></Route>
+				<Route to="/faq" />
 			</Switch>
 		</BrowserRouter>
 	);

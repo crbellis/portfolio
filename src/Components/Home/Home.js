@@ -32,6 +32,10 @@ const Home = () => {
 	}
 	return (
 		<div className={classes.Home}>
+			<div className={classes.Main}>
+				<h1>Zero Capital Trading</h1>
+				<h2>Trading trading trading trading</h2>
+			</div>
 			<div className={classes.Chart}>
 				<Chart className={classes.Chart} data={array}>
 					<LineSeries
