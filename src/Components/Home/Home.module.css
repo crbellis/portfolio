@@ -3,13 +3,43 @@
 	height: calc(100vh - 62px);
 	background-color: black;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.Wrapper {
+	width: 100%;
+	height: 100%;
 	overflow-y: scroll;
+}
+
+.Wrapper::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+.Wrapper::-webkit-scrollbar-track {
+	background-color: black;
+}
+.Wrapper::-webkit-scrollbar-track-piece:start {
+	background: transparent;
+	margin-top: 62px;
+}
+
+.Wrapper::-webkit-scrollbar-thumb {
+	background-color: rgba(43, 43, 43, 0.384);
+	border-radius: 25px;
+	z-index: 100;
 }
 
 .Main {
 	color: white;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	animation: fade-in-right ease-in-out 0.6s forwards;
 }
 
@@ -23,14 +53,8 @@
 	margin-bottom: 5px;
 }
 
-.Chart {
-	height: 300px !important;
-	width: 500px;
-	opacity: 0;
-	animation: fade-in-right ease-in-out 0.6s forwards;
-	animation-delay: 0.3s;
-	/* -webkit-mask-image: linear-gradient(to top, transparent 1%, black 99%); */
-	mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 1%, white 99%);
+.Main h2 {
+	font-weight: 300;
 }
 
 @keyframes fade-in-right {
@@ -41,14 +65,5 @@
 	to {
 		opacity: 1;
 		transform: translateX(0);
-	}
-}
-
-@keyframes grow-left {
-	from {
-		transform: scaleX(0);
-	}
-	to {
-		transform: scaleX(1);
 	}
 }

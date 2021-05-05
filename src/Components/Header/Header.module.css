@@ -2,7 +2,7 @@
 .Header {
 	position: fixed;
 	top: 0;
-	height: 75px;
+	height: 90px;
 	background-color: black;
 	width: 100%;
 	display: flex;
@@ -54,9 +54,16 @@
 
 /* NavLink pseudo for hover */
 .Header a {
-	transition: color 0.1s ease-in-out;
+	background: none;
+	transition: color 0.3s ease-in-out, background 0.1 ease-in-out;
 }
 
 .Header a:hover {
-	color: gray;
+	background: -webkit-linear-gradient(
+		left,
+		rgb(119, 154, 250),
+		rgb(120, 192, 250)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

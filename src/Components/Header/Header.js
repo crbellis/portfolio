@@ -4,27 +4,21 @@ import classes from "./Header.module.css";
 
 const Header = () => {
 	return (
-		<div>
+		<nav>
 			<header className={classes.Header}>
-				<NavLink className={classes.Logo} to="/">
-					Zero Capital Trading
-				</NavLink>
+				<a className={classes.Logo} href="#home">
+					Chase Bellisime
+				</a>
 				<div className={classes.RightGroup}>
-					<NavLink className={classes.NavLink} to="/about">
+					<a className={classes.NavLink} href="#about">
 						About
-					</NavLink>
-					<NavLink className={classes.NavLink} to="/faq">
-						FAQ
-					</NavLink>
-					<NavLink className={classes.NavLink} to="/login">
-						Login
-					</NavLink>
-					<NavLink className={classes.CaNav} to="/signup">
-						Create an account
+					</a>
+					<NavLink className={classes.NavLink} to="/analysts">
+						Contact
 					</NavLink>
 				</div>
 			</header>
-		</div>
+		</nav>
 	);
 };
 

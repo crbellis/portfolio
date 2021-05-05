@@ -1,51 +1,34 @@
 import React from "react";
 import classes from "./Home.module.css";
-import { Chart, LineSeries } from "@devexpress/dx-react-chart-material-ui";
-import { Animation } from "@devexpress/dx-react-chart";
+import scroll from "../../assets/scroll.json";
+import Lottie from "react-lottie";
+import About from "../About/About";
+import Projects from "../Projects/Projects";
 const Home = () => {
-	let values = [
-		103.970551,
-		125.45327,
-		124.424088,
-		126.116135,
-		124.608498,
-		124.406647,
-		128.625549,
-		133.749039,
-		130.977966,
-		140.491753,
-		140.571503,
-		142.457649,
-		146.943192,
-		153.125496,
-		151.640282,
-		164.989487,
-		165.168915,
-		171.769859,
-		189.985611,
-	];
-	let array = [];
-	if (values) {
-		values.map((price, index) => {
-			array.push({ lineValue: price, argument: index });
-		});
-	}
+	const defaultOptions = {
+		loop: true,
+		autoplay: true,
+		animationData: scroll,
+		rendererSettings: {
+			preserveAspectRatio: "xMidYMid slice",
+		},
+	};
+
 	return (
 		<div className={classes.Home}>
-			<div className={classes.Main}>
-				<h1>Zero Capital Trading</h1>
-				<h2>Trading trading trading trading</h2>
-			</div>
-			<div className={classes.Chart}>
-				<Chart className={classes.Chart} data={array}>
-					<LineSeries
-						name="line"
-						valueField="lineValue"
-						argumentField="argument"
-						color="#FFF"
+			<div className={classes.Wrapper}>
+				<div className={classes.Main} id="home">
+					<h1>Chase Bellisime</h1>
+					<h2>Software Engineer</h2>
+					<Lottie
+						className={classes.Lottie}
+						options={defaultOptions}
+						width={100}
+						height={100}
 					/>
-					{/* <Animation /> */}
-				</Chart>
+				</div>
+				<About />
+				<Projects />
 			</div>
 		</div>
 	);
