@@ -75,8 +75,7 @@ const Projects = () => {
 								</a>
 								- task board that keeps track of pending, in
 								progress, and completed tasks. Made with
-								React.js, Redux, and CSS3. Demonstration of
-								error handling, state updates,
+								React.js, Redux, and CSS3.
 								<br />
 								<br />
 								Additional tools used: redux-thunk for async
