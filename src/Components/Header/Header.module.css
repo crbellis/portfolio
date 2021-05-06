@@ -25,6 +25,10 @@
 	width: 250px;
 }
 
+.MobileLogo {
+	display: none;
+}
+
 /* NavLinks - right group styles */
 
 .RightGroup {
@@ -66,4 +70,22 @@
 	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 450px) {
+	.RightGroup {
+		font-size: 0.8em;
+	}
+	.DesktopLogo {
+		display: none;
+	}
+
+	.MobileLogo {
+		display: flex;
+		margin: 0;
+	}
+
+	.Logo {
+		width: 50px;
+	}
 }

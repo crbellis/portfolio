@@ -6,16 +6,26 @@ const Header = () => {
 	return (
 		<nav>
 			<header className={classes.Header}>
-				<a className={classes.Logo} href="#home">
-					Chase Bellisime
-				</a>
+				<div className={classes.DesktopLogo}>
+					<a className={classes.Logo} href="#home">
+						Chase Bellisime
+					</a>
+				</div>
+				<div className={classes.MobileLogo}>
+					<a className={classes.Logo} href="#home">
+						CB
+					</a>
+				</div>
 				<div className={classes.RightGroup}>
 					<a className={classes.NavLink} href="#about">
 						About
 					</a>
-					<NavLink className={classes.NavLink} to="/analysts">
+					<a className={classes.NavLink} href="#projects">
+						Projects
+					</a>
+					<a className={classes.NavLink} href="#contact">
 						Contact
-					</NavLink>
+					</a>
 				</div>
 			</header>
 		</nav>

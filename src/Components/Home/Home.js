@@ -4,6 +4,7 @@ import scroll from "../../assets/scroll.json";
 import Lottie from "react-lottie";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 const Home = () => {
 	const defaultOptions = {
 		loop: true,
@@ -29,6 +30,7 @@ const Home = () => {
 				</div>
 				<About />
 				<Projects />
+				<Contact />
 			</div>
 		</div>
 	);

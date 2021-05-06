@@ -7,8 +7,8 @@ const About = () => {
 	return (
 		<div className={classes.About}>
 			<FadeIn>
-				<div className={classes.AboutContent}>
-					<div className={classes.AboutText} id="about">
+				<div className={classes.AboutContent} id="about">
+					<div className={classes.AboutText}>
 						<h1>About</h1>
 						<div className={classes.Text}>
 							I'm currently working as a Trading Strategist/Data

@@ -29,6 +29,7 @@
 	max-width: 500px;
 	min-width: 350px;
 	margin: 25px 100px;
+	/* padding: 20px; */
 }
 
 .Text {
@@ -41,14 +42,26 @@ img {
 	width: auto;
 	height: auto;
 	border-radius: 5px;
+	margin-top: 100px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 850px) {
+	.About {
+		padding: 20px;
+	}
 	.AboutContent {
 		flex-direction: column;
-		height: 110vh;
+		font-size: 1em;
+		height: 100%;
+	}
+
+	.AboutText {
+		margin-top: 60px;
+		min-width: 275px;
 	}
 	img {
-		width: 70%;
+		/* width: 70%; */
+		margin-top: 0px;
+		width: 100%;
 	}
 }

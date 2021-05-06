@@ -16,7 +16,7 @@ const Projects = () => {
 	return (
 		<div className={classes.Projects}>
 			<FadeIn>
-				<div className={classes.ProjectsContent}>
+				<div className={classes.ProjectsContent} id="projects">
 					<div className={classes.ProjectsHeader}>
 						<h1>Projects</h1>
 						<Lottie
