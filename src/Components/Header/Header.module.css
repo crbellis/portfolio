@@ -32,8 +32,12 @@
 /* NavLinks - right group styles */
 
 .RightGroup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-left: auto;
 	margin-right: 3em;
+	height: 100%;
 }
 
 .NavLink {
@@ -73,6 +77,10 @@
 }
 
 @media (max-width: 450px) {
+	.Header {
+		height: 90px;
+		background-color: black;
+	}
 	.RightGroup {
 		font-size: 0.8em;
 	}
@@ -82,7 +90,10 @@
 
 	.MobileLogo {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		margin: 0;
+		background-color: black;
 	}
 
 	.Logo {
