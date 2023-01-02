@@ -1,12 +1,13 @@
-/* Header style - background and algin elements center */
+/* Header style - background and algin elements center fixed position */
 .Header {
 	position: fixed;
 	top: 0;
-	height: 75px;
+	height: 90px;
 	background-color: black;
 	width: 100%;
 	display: flex;
 	align-items: center;
+	z-index: 500;
 }
 
 /* Logo styles */
@@ -25,11 +26,19 @@
 	width: 250px;
 }
 
+.MobileLogo {
+	display: none;
+}
+
 /* NavLinks - right group styles */
 
 .RightGroup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-left: auto;
 	margin-right: 3em;
+	height: 100%;
 }
 
 .NavLink {
@@ -54,9 +63,41 @@
 
 /* NavLink pseudo for hover */
 .Header a {
-	transition: color 0.1s ease-in-out;
+	background: none;
+	transition: color 0.3s ease-in-out, background 0.1 ease-in-out;
 }
 
 .Header a:hover {
-	color: gray;
+	background: -webkit-linear-gradient(
+		left,
+		rgb(119, 154, 250),
+		rgb(120, 192, 250)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 450px) {
+	.Header {
+		height: 90px;
+		background-color: black;
+	}
+	.RightGroup {
+		font-size: 0.8em;
+	}
+	.DesktopLogo {
+		display: none;
+	}
+
+	.MobileLogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		background-color: black;
+	}
+
+	.Logo {
+		width: 50px;
+	}
 }
